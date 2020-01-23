@@ -66,9 +66,15 @@ namespace QuickCSV
             return "";
         }
 
-        public void SetElement(int row, int col)
+        public void SetElement(int row, int col, string value)
         {
-
+            if (row < data.Count)
+            {
+                if (col < data[row].Count)
+                {
+                    data[row][col] = value;
+                }
+            }
         }
 
         public int GetRows()
