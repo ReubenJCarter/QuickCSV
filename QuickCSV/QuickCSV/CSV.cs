@@ -77,7 +77,7 @@ namespace QuickCSV
             }
         }
 
-        public int GetRows()
+        public int GetRowCount()
         {
             return data.Count; 
         }

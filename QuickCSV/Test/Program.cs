@@ -22,7 +22,7 @@ namespace Test
             CSV csv = new CSV();
             csv.ReadFromFile(args[0]);
 
-            Console.WriteLine("csv rows:" + csv.GetRows() + "  " );
+            Console.WriteLine("csv rows:" + csv.GetRowCount() + "  " );
             csv.WriteToFile("OUT_TEST.csv"); 
         }
     }
